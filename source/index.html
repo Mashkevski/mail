@@ -4,103 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hexal</title>
+  <title>neutronMail</title>
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <header class="main-header">
     <div class="header-top">
-      <a class="logo" href="#">neutron<span>Mail</span></a>
+      <h1 class="logo" href="#">neutron<span>Mail</span></h1>
       <nav class="main-nav">
         <ul>
           <li class="nav-item"><a href="#">About</a></li>
           <li class="nav-item"><a href="#">Security</a></li>
           <li class="nav-item"><a href="#">Blog</a></li>
+          <li class="nav-item"><a href="#">Careers</a></li>
           <li class="nav-item"><a href="#">Support</a></li>
           <li class="nav-item"><a href="#">Donate</a></li>
-          <li class="nav-item"></li>
-          <li class="nav-item"></li>
         </ul>
       </nav>
       <ul class="user-nav">
-        <li class="login-link" >
-          <a href="#">Log in</a>
+        <li class="log-in" >
+          <a href="#">
+            <svg class="log-in-icon" width="15" hight="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 448h-84c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h84c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32h-84c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h84c53 0 96 43 96 96v192c0 53-43 96-96 96zm-47-201L201 79c-15-15-41-4.5-41 17v96H24c-13.3 0-24 10.7-24 24v96c0 13.3 10.7 24 24 24h136v96c0 21.5 26 32 41 17l168-168c9.3-9.4 9.3-24.6 0-34z"></path></svg>
+            <span>Log in</span>
+          </a>
         </li>
         <li class="registration">
           <a href="#">Sign up</a>
-          </li>
+        </li>
       </ul>
     </div>
-    <ul class="breadcrumbs">
-      <li><a class="active" href="#">English</a></li>
-      <li><a href="#">French</a></li>
-      <li><a href="#">Italian</a></li>
-      <li><a href="#">Polish</a></li>
+    <ul class="lang-breadcrumbs">
+      <li class="lang-item"><a class="lang-active" href="#">English</a></li>
+      <li class="lang-item"><a href="#">French</a></li>
+      <li class="lang-item"><a href="#">Italian</a></li>
+      <li class="lang-item"><a href="#">Polish</a></li>
     </ul>
-    <ul class="social">
-      <li class="social-item">
-        <a href="#"><span class="visually-hidden">Google+</span></a>
-      </li>
-      <li class="social-item">
-        <a href="#"><span class="visually-hidden">Facebook</span></a>
-      </li>
-      <li class="social-item">
-        <a href="#"><span class="visually-hidden">Twitter</span></a>
-      </li>
+    <ul class="header-social">
+      <li><a class="social-google" href="#"><span class="visually-hidden">Google+</span></a></li>
+      <li><a class="header-facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+      <li><a class="header-twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
     </ul>
   </header>
 
   <main>
 
     <section class="create-account">
-      <h1>Secure Email Communication</h1>
+      <h2>Secure Email Communication</h1>
       <p>Based in <span>Somewhere</span></p>
       <div class="create-buttons">
         <a class="btn" href="#">Create account</a>
-        <a class="round-btn" href="#" class="apple"></a>
-        <a class="round-btn" href="#" class="triangle"></a>
+        <a class="app-store" href="#" class="apple"></a>
+        <a class="google-play" href="#" class="triangle"></a>
       </div>
     </section>
 
-    <section class="features">
-      <div class="privacy">
+    <div class="features-container">
+      <section class="features">
+      <div class="feature-item privacy">
         <h3>Swiss Privacy</h3>
         <p class="short-description">Data Security and Neutrality</p>
-        <p class="description">NeutronMail is incorporated in Somewhere and all our servers are located in Switzerland. This means all user data is
+        <p class="description">NeutronMail is incorporated in Somewhere and all our serv&shy;ers are located in Switzerland. This means all user data is
           protected by strict Swiss privacy laws.</p>
       </div>
-      <div class="encryption">
+      <div class="feature-item encryption">
         <h3>Double Encryption</h3>
         <p class="short-description">Automatic Email Security</p>
-        <p class="description">All emails are secured automatically with end-to-end encryption. This means even we cannot decrypt and read your emails. As a result, your encrypted emails cannot be shared with third parties.</p>
+        <p class="description">All emails are secured automatically with end-to-end encryption. This means even we cannot decrypt and read your emails. As a result, your encrypted emails cannot be&nbsp;shared with third parties.</p>
       </div>
-      <div class="anonymous">
+      <div class="feature-item anonymous">
         <h3>Anonymous Email</h3>
         <p class="short-description">Protect Your Privacy</p>
         <p class="description">No personal information is required to create your secure email account. By default, we do not keep any IP logs which can be linked to your anonymous email account. Your privacy comes first.</p>
       </div>
       <div class="security">
         <h3>Physical Security</h3>
-        <p class="description">NeutronMail's infrastructure resides in Europe's <span>most secure</span> datacenter, underneath 1000 meters of solid rock.</p>
+        <p class="security-description">NeutronMail's infrastructure resides in Europe's <span>most secure</span> datacenter, underneath 1000 meters of solid rock.</p>
       </div>
       <a class="learn-more" href="#">Learn more about our security features</a>
-    </section>
+      </section>
+    </div>
 
-    <section class="feedback">
+    <section class="testimonials">
       <div class="slider">
-        <blockquote>
+        <div class="toggles">
+          <button class="slider-btn btn-1 slider-active"></button>
+          <button class="slider-btn btn-2"></button>
+          <button class="slider-btn btn-3"></button>
+        </div>
+        <blockquote class="slider-text">
           <p>A new email service being developed by a group from MIT and CERN promises to bring secure, encrypted email to the masses and keep sensitive information away from prying eyes.</p>
           <cite>— Boston Herald</cite>
         </blockquote>
       </div>
     </section>
-    <section class="devices">
-      <h2>Any device, anywhere</h2>
-      <p>The NeutronMail inbox is optimized for productivity. Each detail within our secure email service is optimized to help you better read, organize, and send email.</p>
-      <a href="#"><span class="visually-hidden">App Store</span></a>
-      <a href="#"><span class="visually-hidden">Google Play</span></a>
-    </section>
+    
+    <div class="devices-container">
+      <section class="devices">
+        <h2>Any device, anywhere</h2>
+        <p>The NeutronMail inbox is optimized for productivity. Each detail within our secure email service is optimized to help you better read, organize, and send email.</p>
+        <img class="devices-image" src="assets/images/download-bg.png" alt="Devices" width="578" height="670">
+        <div class="apps-wrapper">
+          <a href="#"><img src="./assets/images/app-store.png" alt="App Store" width="180" height="55"></a>
+          <a ahref="#"><img src="./assets/images/google-play.png" alt="Google Play" width="180" height="55"></a>
+        </div>
+      </section>
+    </div>
     <section class="pay">
       <p>Privacy is a fundamental human right.</p>
       <p>Your support helps us to protect privacy world-wide.</p>

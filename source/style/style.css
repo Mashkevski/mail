@@ -378,6 +378,11 @@ body {
   background-image: url("../assets/images/icons/google-play.png");
 }
 
+.features-container {
+  width: auto;
+  overflow: hidden;
+}
+
 .features {
   position: relative;
 
@@ -529,7 +534,7 @@ body {
 .testimonials {
   max-width: 1800px;
   margin: 0 auto;
-  padding: 141px 850px 65px 339px;
+  padding: 141px 0 65px 0;
   background-image: url("../assets/images/testimonials.png");
   background-repeat: no-repeat;
   background-position: 22px 21px;
@@ -537,23 +542,26 @@ body {
 
 .slider {
   display: flex;
-  /* width: 530px; */
+  width: 78%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 36% 0 7.7%;
   color: #101010;
   font-family: "MalagaNarrowOT", serif;
 }
 
-.slider blockquote {
+.slider-text {
   margin: 0;
 }
 
-.slider p {
+.slider-text p {
   letter-spacing: 0.2px;
   font-size: 24px;
   margin: 0 0 10px 0;
   line-height: 32px;
 }
 
-.slider cite {
+.slider-text cite {
   color: #727272;
   font-size: 16px;
 }
@@ -576,6 +584,35 @@ body {
   background-color: #101010;
 }
 
+.devices-container {
+  width: auto;
+  position: relative;
+}
+
+.devices-container::after {
+  z-index: -10;
+  content: "";
+  position: absolute;
+  display: block;
+  top: -250px;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(-7deg, transparent 0%, transparent 90%, #ffffff 90%, #ffffff 100%),
+    linear-gradient(to left bottom, #eeeeee 0%, #ffffff 100%);
+}
+
+.devices-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: #b9b9b9;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
 
 .devices {
   display: flex;
@@ -583,6 +620,7 @@ body {
   position: relative;
   min-height: 418px;
   max-width: 1400px;
+  width: 78%;
   margin: 0 auto;
   text-align: right;
   padding: 48px 491px 20px 10px;
@@ -592,11 +630,11 @@ body {
   content: "";
   position: absolute;
   display: block;
-  width: 100vw;
+  width: 85.7%;
   height: 1px;
   background-color: #b9b9b9;
+  right: 0;
   bottom: 0;
-  left: 14%;
   z-index: -2;
 }
 
