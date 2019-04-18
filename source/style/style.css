@@ -48,6 +48,7 @@ html {
 }
 
 .btn {
+  display: inline-block;
   min-width: 246px;
   padding: 18px 10px 18px 10px;
 
@@ -390,9 +391,9 @@ body {
   width: 91%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 5.6% 0 50px 6%;
+  padding: 114px 0 50px 0;
 
-  grid-template-columns: 30.8% 33.8% 1fr;
+  grid-template-columns: 8.7% 28% 30.9% 1fr;
 }
 
 .feature-item {
@@ -400,6 +401,7 @@ body {
 }
 
 .privacy {
+  grid-column-start: 2;
   position: relative;
   padding: 0 8% 10px 0;
 
@@ -419,7 +421,7 @@ body {
 }
 
 .encryption {
-  padding: 0 10% 10px 10%;
+  padding: 0 10% 10px 10.4%;
 
   background-image: url("../assets/images/encryption.png");
   background-position: calc(10% - 17px) -15px;
@@ -480,7 +482,7 @@ body {
 
   border-right: 1px solid #b9b9b9;
 
-  grid-column: 1 / 3;
+  grid-column: 2 / 4;
 }
 
 .security::before {
@@ -496,9 +498,10 @@ body {
 
 .security h3 {
   margin: 0 0 13px 0;
-
+  font-weight: normal;
   font-size: 60px;
   color: #535353;
+  letter-spacing: 0.6px;
 }
 
 .security-description {
@@ -507,7 +510,7 @@ body {
   font-size: 24px;
   line-height: 23px;
   color: #959393;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 
 
@@ -586,6 +589,7 @@ body {
 
 .devices-container {
   width: auto;
+  margin-bottom: 49px;
   position: relative;
 }
 
@@ -597,9 +601,9 @@ body {
   top: -250px;
   left: 0;
   width: 100%;
-  height: 800px;
-  background: linear-gradient(-7deg, transparent 0%, transparent 90%, #ffffff 90%, #ffffff 100%),
-    linear-gradient(to left bottom, #eeeeee 0%, #ffffff 100%);
+  height: 1100px;
+  background: linear-gradient(-6.5deg, transparent 0%, transparent 74.5%, #ffffff 74.5%, #ffffff 100%),
+    linear-gradient(15deg, #ffffff 0%, #ffffff 30%, #eeeeee 120%);
 }
 
 .devices-container::before {
@@ -642,6 +646,7 @@ body {
   margin: 0 0 15px 0;
   color: #535353;
   font-size: 36px;
+  letter-spacing: -0.2px;
 }
 
 .devices p {
@@ -666,3 +671,294 @@ body {
   margin-left: 10px;
 }
 
+.pay {
+  padding: 20px 10px 10px 10px;
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 74px;
+  text-align: center;
+}
+
+.pay-title {
+  margin: 0;
+  font-size: 36px;
+  color: #535353;
+  line-height: 44px;
+  letter-spacing: 0.3px;
+}
+
+.pay-text {
+  margin: 0 0 40px 0;
+  letter-spacing: 0.2px;
+  font-size: 29px;
+  color: #7c7c7c;
+}
+
+.paid-btn {
+  margin: 0 45px 0 0;
+  letter-spacing: 0.4px;
+}
+
+.paid-icon {
+  margin-right: 3px;
+}
+
+.donate-btn {
+  min-width: 166px;
+  background: linear-gradient(to right bottom, #35bce0, #5e7bea);
+  letter-spacing: 0.3px;
+}
+
+
+.donate-icon {
+  margin: 0 4px -2px 5px;
+}
+
+.sponsors {
+  padding: 20px 45px 20px 0;
+  position: relative;
+  margin-bottom: 156px;
+}
+
+.sponsors::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: calc(50% + 500px);
+  height: 1px;
+  background-color: #b9b9b9;
+  left: 0;
+  top: 0;
+}
+
+.sponsors::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 440px;
+  width: 1px;
+  background-color: #b9b9b9;
+  right: calc(50% - 500px);
+  top: 0;
+}
+
+.sponsors-title {
+  width: 1000px;
+  margin: 0 auto 20px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #7a7a7a;
+  text-align: right;
+}
+
+.sponsors-list {
+  width: 1000px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 0 0 110px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sponsors-list li,
+.sponsors-list a {
+  display: flex;
+  align-items: center;
+}
+
+.sponsor-radware {
+  margin-right: 58px;
+}
+
+.sponsor-cyberkov {
+  margin-right: 54px;
+}
+
+.sponsor-qouvadis {
+  margin-right: 58px;
+}
+
+.sponsor-fongit {
+  margin-right: 26px;
+}
+
+.sponsor-deltalis {
+  margin-right: 53px;
+}
+
+.sponsor-ventury {
+  margin-right: 66px;
+}
+
+.main-footer {
+  width: 78%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: #5c5c5c;
+  overflow: hidden;
+}
+
+.main-footer h3 {
+  margin: 0 0 30px 0;
+  font-size: 18px;
+}
+
+.main-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-top {
+  display: flex;
+  margin-bottom: 63px;
+}
+
+.footer-top ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-top li {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.contacts {
+  width: 250px;
+  padding-left: 21px;
+  position: relative;
+  margin-bottom: auto;
+  border-left: 1px solid #b9b9b9;
+}
+
+.address,
+.contacts-text {
+  margin: 0 0 7px 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contacts-text {
+  margin-bottom: 5px;
+}
+
+.address:nth-of-type(3) {
+  margin-bottom: 30px;
+}
+
+.contacts a {
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+}
+
+.contacts > a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d6d6d6;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+}
+
+.footer-bottom {
+  font-size: 12px;
+}
+
+.company,
+.legal,
+.neutronmail {
+  text-align: right;
+  width: 200px;
+  padding: 0 30px 0 10px;
+}
+
+.company span,
+.legal span,
+.neutronmail span {
+  margin-left: 5px;
+}
+
+.company {
+  position: relative;
+  width: 150px;
+  margin-left: auto;
+  padding-right: 27px;
+}
+
+.company::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background-color: #b9b9b9;
+}
+
+.legal {
+  margin-left: 55px;
+}
+
+.neutronmail {
+  margin-right: 14%;
+}
+
+.footer-social {
+  display: flex;
+  margin: 0 0 8px 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-social-item {
+  position: relative;
+
+  padding: 10px 16px 10px 14px;
+}
+
+.footer-social-item:first-child {
+  padding-left: 3px;
+}
+
+.footer-social-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 1px;
+
+  display: block;
+  width: 1px;
+  height: 10px;
+
+  background-color: #959595;
+  transform: rotate(22deg);
+}
+
+.footer-social a {
+  position: relative;
+}
+
+.footer-social a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d6d6d6;
+  bottom: 2px;
+  left: 0;
+  z-index: -1;
+}
+
+.copyright {
+  margin: 0;
+  letter-spacing: 0.2px;
+}
