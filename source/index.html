@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <header class="main-header">
+  <header class="main-header menu-closed menu-nojs">
     <div class="header-top">
       <h1 class="logo" href="#">neutron<span>Mail</span></h1>
       <nav class="main-nav">
-        <ul>
+        <button class="main-nav-toggle"><span class="toggle-text">Open menu</span></button>
+        <ul class="main-nav-list">
           <li class="nav-item"><a href="#">About</a></li>
           <li class="nav-item"><a href="#">Security</a></li>
           <li class="nav-item"><a href="#">Blog</a></li>
@@ -54,8 +55,10 @@
       <p>Based in <span>Somewhere</span></p>
       <div class="create-buttons">
         <a class="btn" href="#">Create account</a>
-        <a class="app-store" href="#" class="apple"><span class="visually-hidden">App store</span></a>
-        <a class="google-play" href="#" class="triangle"><span class="visually-hidden">Google play</span></a>
+        <div class="store-wrapper">
+          <a class="app-store" href="#" class="apple"><span class="visually-hidden">App store</span></a>
+          <a class="google-play" href="#" class="triangle"><span class="visually-hidden">Google play</span></a>
+        </div>
       </div>
     </section>
 
@@ -103,7 +106,7 @@
       <section class="devices">
         <h2>Any device, anywhere</h2>
         <p>The NeutronMail inbox is optimized for productivity. Each detail within our secure email service is optimized to help you better read, organize, and send email.</p>
-        <img class="devices-image" src="assets/images/download-bg.png" alt="Devices" width="578" height="670">
+        <img class="devices-image" src="assets/images/download-bg.jpg" alt="Devices" width="578" height="670">
         <div class="apps-wrapper">
           <a href="#"><img src="./assets/images/app-store.png" alt="App Store" width="180" height="55"></a>
           <a href="#"><img src="./assets/images/google-play.png" alt="Google Play" width="180" height="55"></a>
@@ -193,5 +196,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
